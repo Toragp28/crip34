@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanel Textuel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Suport</h1>
+    </header>
+    <nav>
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="H2.html" class="nav-link">Régle</a>
+        <a href="interface.html" class="nav-link">Jeux</a>
+    </nav>
+
+    <div class="chat-container" id="chat-container">
+        <!-- Ajoutez de nouveaux messages ici -->
+    </div>
+
+    <div class="message-form">
+        <textarea id="user-message" placeholder="Votre message..." rows="1"></textarea>
+        <select id="user-grade">
+            <option value="Utilisateur">Utilisateur</option>
+            <option value="Modérateur">Modérateur</option>
+            <option value="Admin">Admin</option>
+        </select>
+        <button id="send-button">Envoyer</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

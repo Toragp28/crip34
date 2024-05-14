@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simulateur de Trading</title>
+    <link rel="stylesheet" href="styles3.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="image">
+    <header>
+        <h1>Monnaie Virtuelle</h1>
+    </header>
+    <nav>
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="H2.html" class="nav-link">Régle</a>
+        <a href="interface.html" class="nav-link">Jeux</a>
+        <a href="teste.html" class="nav-link">Suport plus chate</a>
+    </nav>
+</body>
+
+<body class="crache">
+    <h1>Simulateur de Trading de Monnaie Virtuelle</h1>
+    <div class="trading-container">
+        <div class="left-panel">
+            <canvas id="profitChart" width="400" height="200"></canvas> <!-- Graphique -->
+        </div>
+        <div class="right-panel"> <!-- Panneau d'information -->
+            <div class="info">
+                <p>Prix actuel : <span id="price">0</span> €/unité</p>
+                <p>Solde d'argent : <span id="cash">1000</span> €</p>
+                <p>Solde de monnaie virtuelle : <span id="crypto">0</span> unités</p>
+                <p>Profit/Perte : <span id="profit">0</span> €</p>
+            </div>
+            <div class="actions">
+                <button id="buyButton">Acheter</button>
+                <button id="sellButton">Vendre</button>
+            </div>
+        </div>
+    </div>
+    <script src="trading.js"></script>
+</body>
+
+</html>

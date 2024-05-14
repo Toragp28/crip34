@@ -1,0 +1,62 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+header {
+    background-color: #545753;
+    color: #fffffff7;
+    padding: 10px;
+    text-align: center;
+
+}
+
+nav {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0d0c0c;
+    margin: 0 10px;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #545753;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    /* Animation sur la transformation */
+}
+
+.nav-link:active {
+    transform: scale(0.9);
+    /* Réduire l'échelle lorsqu'il est activé */
+}
+
+.nav-link:hover {
+    background-color: #313331;
+    /* Changement de couleur de fond au survol */
+}
+
+
+/* Effet d'entrée pour les paragraphes */
+p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Effet d'entrée lorsque le paragraphe devient visible */
+p.active {
+    opacity: 1;
+    transform: translateY(0);
+}

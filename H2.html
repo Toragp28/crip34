@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monnaie Virtuelle</title>
+    <link rel="stylesheet" href="style/style2.css">
+</head>
+
+<body>
+    <header>
+        <h1>Réglement et wiki</h1>
+    </header>
+    <nav>
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="H2.html" class="nav-link">Régle</a>
+        <a href="interface.html" class="nav-link">Jeux</a>
+        <a href="teste.html" class="nav-link">Suport plus chate</a>
+
+    </nav>
+    <div>
+        <p>Voici quelques règles du trading en monnaie virtuelle :</p>
+
+        <p>1. Éducation et recherche : Avant de commencer à trader en monnaie virtuelle, il est important de se former
+            et
+            de se renseigner sur les différentes cryptomonnaies, les plateformes d'échange et les stratégies de trading.
+            Plus vous en saurez, plus vous serez en mesure de prendre des décisions éclairées.</p>
+
+        <p>2. Gestion des risques : Le trading en monnaie virtuelle comporte des risques. Il est essentiel de mettre
+            en
+            place une stratégie de gestion des risques pour limiter les pertes potentielles. Cela peut inclure la
+            définition
+            d'un montant maximal à investir, l'utilisation de stop-loss pour limiter les pertes et la diversification de
+            votre portefeuille.</p>
+
+        <p>3. Analyse technique : L'analyse technique consiste à étudier les graphiques et les indicateurs pour
+            identifier
+            les tendances et les opportunités de trading. Il est utile de se familiariser avec les outils d'analyse
+            technique et de les utiliser pour prendre des décisions de trading.</p>
+
+        <p>4. Patience et discipline : Le trading en monnaie virtuelle peut être volatil et il est important de
+            rester
+            patient et discipliné. Ne laissez pas vos émotions dicter vos décisions de trading et suivez votre plan de
+            trading de manière cohérente.</p>
+        <p>5. Sécurité : Assurez-vous de prendre des mesures de sécurité appropriées pour protéger vos actifs en
+            monnaie
+            virtuelle. Utilisez des portefeuilles sécurisés, activez l'authentification à deux facteurs et évitez de
+            divulguer vos informations personnelles ou vos clés privées.</p>
+
+        <p>6. Suivi des actualités : Restez informé des dernières actualités et des développements dans le domaine
+            des
+            cryptomonnaies. Les nouvelles peuvent avoir un impact sur les prix et les tendances du marché, il est donc
+            important de rester à jour.</p>
+
+        <p> 7. Commencez petit : Si vous débutez dans le trading en monnaie virtuelle, il est recommandé de commencer
+            avec
+            de petits montants. Cela vous permettra de vous familiariser avec le processus de trading sans prendre de
+            gros
+            risques.</p>
+
+        <p>Il est important de noter que le trading en monnaie virtuelle comporte des risques et qu'il est possible
+            de
+            perdre de l'argent. Il est donc essentiel d'être conscient de ces risques et de ne trader qu'avec des fonds
+            que
+            vous pouvez vous permettre de perdre.</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const paragraphs = document.querySelectorAll("p");
+
+            paragraphs.forEach(function (paragraph) {
+                if (isInViewport(paragraph)) {
+                    paragraph.classList.add("active");
+                }
+            });
+
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+
+            window.addEventListener("scroll", function () {
+                paragraphs.forEach(function (paragraph) {
+                    if (isInViewport(paragraph)) {
+                        paragraph.classList.add("active");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
